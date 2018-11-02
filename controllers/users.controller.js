@@ -18,3 +18,12 @@ module.exports.showData=function(req,res){
     .sendFile(path.join(__dirname,"../views/index.html"))
     
 }
+
+
+module.exports.addUser=function(req,res){
+    console.log(req.url + ""+req.method);
+    res.status(200)
+    .set('text/html')
+    .sendFile('User is added ')
+    
+}

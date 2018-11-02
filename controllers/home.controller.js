@@ -2,8 +2,7 @@ var path=require('path')
 
 module.exports.rootRequest=function(req,res){
     console.log(req.url + "  "+req.method);
-    res.
-    status(200).
+    res.status(200).
     send("server first request on /home")
 
 }

@@ -4,7 +4,7 @@
   "description": "This is buy and sell property project",
   "main": "server.js",
   "scripts": {
-    "start":"node server.js",
+    "start": "node server.js",
     "test": "mocha"
   },
   "keywords": [
@@ -13,6 +13,7 @@
   "author": "Tejaswi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4"
   }
 }

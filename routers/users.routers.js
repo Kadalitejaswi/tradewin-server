@@ -1,8 +1,8 @@
 var express=require('express');
-var router=express.Router('../controllers/users.controllers');  // constructor call
+var router=express.Router() // constructor call
 var userCtrl=require('../controllers/users.controller');
 
-router.route('/user').get(userCtrl.getUsers)
+router.route('/user').get(userCtrl.getUsers).post(userCtrl.addUser)
 
 router.route('/data').get(userCtrl.showData)
 
